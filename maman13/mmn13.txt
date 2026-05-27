@@ -1,0 +1,97 @@
+################################ Question 1 - find_missing_index ################################
+
+Question 1 Test 1: passed 
+	mmn13, find_missing_index, args:([22, 24, 26, 32, 34, 36, 38, 40],), result: 3
+Question 1 Test 2: passed 
+	mmn13, find_missing_index, args:([22, 26, 28],), result: 1
+Question 1 Test 3: passed 
+	mmn13, find_missing_index, args:([2, 4, 6, 8, 10],), result: 5
+Question 1 Test 4: passed 
+	mmn13, find_missing_index, args:([28, 26, 22],), result: 2
+Question 1 Test 5: passed 
+	mmn13, find_missing_index, args:([],), raised: ValueError - Length of list is less than 2
+Question 1 Test 6: passed 
+	mmn13, find_missing_index, args:([5],), raised: ValueError - Length of list is less than 2
+Question 1 Test 7: passed 
+	mmn13, find_missing_index, args:([2, 4, 6, 8, 12],), result: 4
+Question 1 Test 8: passed 
+	mmn13, find_missing_index, args:([1, 2, 3, 10, 11, 12],), result: 3
+Question 1 Test 9 (no mutation): passed 
+	mmn13, find_missing_index, args:([10, 20, 30, 50, 60],), result: 3
+Question 1 Test 10 (no mutation): passed 
+	mmn13, find_missing_index, args:([100, 200, 300, 400],), result: 4
+################################ Question 2 - count_triples################################
+
+Question 2 Test 1 (no mutation): passed 
+	mmn13, count_triples, args:([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 18, 19, 22], 30), result: 1
+Question 2 Test 2: passed 
+	mmn13, count_triples, args:([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 18, 19, 22], 60), result: 3
+Question 2 Test 3: passed 
+	mmn13, count_triples, args:([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 18, 19, 22], 80), result: 2
+Question 2 Test 4: passed 
+	mmn13, count_triples, args:([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 18, 19, 22], 20), result: 0
+Question 2 Test 5: passed 
+	mmn13, count_triples, args:([], 80), result: 0
+Question 2 Test 6: passed 
+	mmn13, count_triples, args:([2, 3], 20), result: 0
+Question 2 Test 7: passed 
+	mmn13, count_triples, args:([1, 2, 4, 5, 10, 20], 20), result: 2
+Question 2 Test 8: passed 
+	mmn13, count_triples, args:([1, 2, 4, 5, 10, 20], 40), result: 3
+Question 2 Test 9: passed 
+	mmn13, count_triples, args:([1, 2, 4, 5, 10, 20], 1000), result: 1
+Question 2 Test 10 (no mutation): passed 
+	mmn13, count_triples, args:([3, 4, 5], 60), result: 1
+################################ Question 3 - pair_sum ################################
+
+Question 4 Test 1: passed 
+	mmn13, pair_sum, args:([2, 0, 4, -2, 1, 6, 5], 6), result: [(2, 4), (0, 6), (1, 5)]
+Question 4 Test 2: passed 
+	mmn13, pair_sum, args:([2, 0, 4, -2, 1, 6, 5], 2), result: [(2, 0), (4, -2)]
+Question 4 Test 3: passed 
+	mmn13, pair_sum, args:([2, 0, 4, -2, 1, 6, 5], 12), result: []
+Question 4 Test 4: passed 
+	mmn13, pair_sum, args:([], 6), result: []
+Question 4 Test 5: passed 
+	mmn13, pair_sum, args:([5], 10), result: []
+Question 4 Test 6: passed 
+	mmn13, pair_sum, args:([3, 5], 8), result: [(3, 5)]
+Question 4 Test 7: passed 
+	mmn13, pair_sum, args:([3, 5], 10), result: []
+Question 4 Test 8: passed 
+	mmn13, pair_sum, args:([1, 4, 2, 3], 5), result: [(1, 4), (2, 3)]
+Question 4 Test 9: passed 
+	mmn13, pair_sum, args:([-3, 1, -1, 2], -4), result: [(-3, -1)]
+Question 4 Test 10 (no mutation): passed 
+	mmn13, pair_sum, args:([2, 0, 4, -2, 1, 6, 5], 6), result: [(2, 4), (0, 6), (1, 5)]
+################################ Question 3 - count_triples_rec ################################
+
+Question 3 Test 1: passed 
+	mmn13, count_triples_rec, args:([2, 0, 3, -2, 1, 8, 5], 6), result: 4
+Question 3 Test 2: passed 
+	mmn13, count_triples_rec, args:([2, 0, 3, -2, 1, 8, 5], 5), result: 2
+Question 3 Test 3: passed 
+	mmn13, count_triples_rec, args:([2, 0, 3, -2, 1, 8, 5], 17), result: 0
+Question 3 Test 4: passed 
+	mmn13, count_triples_rec, args:([], 6), result: 0
+Question 3 Test 5: passed 
+	mmn13, count_triples_rec, args:([1, 2], 3), result: 0
+Question 3 Test 6: passed 
+	mmn13, count_triples_rec, args:([1, 2, 3], 6), result: 1
+Question 3 Test 7: passed 
+	mmn13, count_triples_rec, args:([1, 2, 3], 10), result: 0
+Question 3 Test 8: passed 
+	mmn13, count_triples_rec, args:([1, 2, 3, 4, 5], 9), result: 2
+Question 3 Test 9: passed 
+	mmn13, count_triples_rec, args:([-3, -2, -1, 0, 1], -6), result: 1
+Question 3 Test 10 (no mutation): passed 
+	mmn13, count_triples_rec, args:([2, 0, 3, -2, 1, 8, 5], 6), result: 4
+
+################################ Summary ################################
+
+
+ ********** Final Score **********
+Question 1: 10 / 10
+Question 2: 10 / 10
+Question 4: 10 / 10
+Question 3: 10 / 10
